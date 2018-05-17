@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SpaceshipDetailsComponent } from './spaceship-details/spaceship-details.component';
 import { SpaceshipListComponent } from './spaceship-list/spaceship-list.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 
 @NgModule({
@@ -13,10 +16,13 @@ import { SpaceshipListComponent } from './spaceship-list/spaceship-list.componen
     AppComponent,
     HomepageComponent,
     SpaceshipDetailsComponent,
-    SpaceshipListComponent
+    SpaceshipListComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
