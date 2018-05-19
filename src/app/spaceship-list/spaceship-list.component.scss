@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  width: 100%;
+  padding: 25px 35px;
+}
+.spaceship-list__title {
+  margin-bottom: 25px;
+}
+app-spaceship-list-filters /deep/ {
+  margin-bottom: 20px;
+}

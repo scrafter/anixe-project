@@ -13,6 +13,7 @@ export class FieldInputComponent implements OnInit {
   @Input() placeholder = 'Type a value';
   @Input() min: number;
   @Input() max: number;
+  @Input() label: string;
 
   constructor() { }
 

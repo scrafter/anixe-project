@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables";
+
+.spaceship-list-item__element {
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  @media (max-width: $screen-s-max) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.spaceship-list-item__avatar {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 12px;
+}
+.spaceship-list-item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: $screen-s-max) {
+    align-items: center;
+  }
+}
+.spaceship-list-item__name {
+  font-weight: 600;
+  @media (max-width: $screen-s-max) {
+    margin-top: 12px;
+  }
+}
+.spaceship-list-item__passengers {
+  margin-bottom: 0;
+}

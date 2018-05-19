@@ -12,6 +12,7 @@ export class FieldSelectComponent implements OnInit {
   @Input() parentFormGroup: FormGroup;
   @Input() idKey = '@id';
   @Input() options = [];
+  @Input() label: string;
 
   constructor() { }
 

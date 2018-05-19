@@ -1,0 +1,13 @@
+<div class="spaceship-list-item__element">
+  <div class="spaceship-list-item__avatar" [style.backgroundImage]="prepareAvatarUrl(item.avatarUrl)"></div>
+  <div class="spaceship-list-item__info">
+    <h3 class="spaceship-list-item__name">{{item.name}}</h3>
+    <p class="spaceship-list-item__passengers">
+      <strong>Max passengers:</strong> {{item.maxPassengers}}
+    </p>
+    <p class="spaceship-list-item__price">
+      <strong>Price per day:</strong> ${{item.pricePerDay}}
+    </p>
+    <p class="spaceship-list-item__description">{{item.description}}</p>
+  </div>
+</div>

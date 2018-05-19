@@ -1,0 +1,14 @@
+<form [formGroup]="filtersForm" class="spaceship-list-filters">
+  <app-field-input [name]="'minPrice'"
+                   [label]="'Min price'"
+                   [parentFormGroup]="filtersForm"></app-field-input>
+  <app-field-input [name]="'maxPrice'"
+                   [label]="'Max price'"
+                   [parentFormGroup]="filtersForm"></app-field-input>
+  <app-field-select [name]="'passengersNr'"
+                    [label]="'Passengers number'"
+                    [placeholder]="'Choose from the list'"
+                    [options]="passengersOptions"
+                    [idKey]="'value'"
+                    [parentFormGroup]="filtersForm"></app-field-select>
+</form>

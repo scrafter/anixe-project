@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -20,7 +20,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
+import { SpaceshipListItemComponent } from './spaceship-list/spaceship-list-item/spaceship-list-item.component';
+import { SpaceshipListFiltersComponent } from './spaceship-list/spaceship-list-filters/spaceship-list-filters.component';
 
+// for bigger application it will be good to create
+// new module for spaceship
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +38,8 @@ import { MatNativeDateModule } from '@angular/material';
     FieldInputComponent,
     FieldSelectComponent,
     FieldDateComponent,
+    SpaceshipListItemComponent,
+    SpaceshipListFiltersComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +53,7 @@ import { MatNativeDateModule } from '@angular/material';
   ],
   providers: [],
   bootstrap: [ AppComponent ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {
 }

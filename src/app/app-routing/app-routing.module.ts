@@ -14,7 +14,7 @@ const routes: Routes = [
     component: SpaceshipListComponent,
   },
   {
-    path: 'spaceship-details',
+    path: 'spaceship-details/:id',
     component: SpaceshipDetailsComponent,
   },
 ];
