@@ -1,6 +1,8 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import "./assets/styles/reset";
 @import "./assets/styles/global";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 * {
   margin: 0;

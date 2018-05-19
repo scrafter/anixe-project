@@ -1,0 +1,10 @@
+<app-field [formGroup]="parentFormGroup">
+  <ng-select class="field-select__input"
+             *ngIf="options"
+             [placeholder]="placeholder"
+             [formControlName]="name"
+             [items]="options"
+             [bindValue]="idKey"
+             [bindLabel]="'label'"
+             (change)="onChange($event)"></ng-select>
+</app-field>

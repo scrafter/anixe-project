@@ -1,0 +1,48 @@
+<form class="search__form" [formGroup]="searchForm" (submit)="onSubmit()">
+  <app-field-date [parentFormGroup]="searchForm"
+                  [placeholder]="'From date'"
+                  [customFilter]="fnFromDateFilter"
+                  [name]="'fromDate'"></app-field-date>
+
+  <app-field-date [parentFormGroup]="searchForm"
+                  [placeholder]="'To date(from date first)'"
+                  [customFilter]="fnToDateFilter"
+                  [name]="'toDate'"></app-field-date>
+
+  <app-field-select [parentFormGroup]="searchForm"
+                    [placeholder]="'Pick up place'"
+                    [options]="placeOptions"
+                    [idKey]="'id'"
+                    [name]="'pickUp'"></app-field-select>
+  <app-field-select [parentFormGroup]="searchForm"
+                    [placeholder]="'Drop off place'"
+                    [options]="placeOptions"
+                    [idKey]="'id'"
+                    [name]="'dropOff'"></app-field-select>
+
+  <app-field-select [parentFormGroup]="searchForm"
+                    [placeholder]="'Max passengers'"
+                    [options]="passengersOptions"
+                    [idKey]="'value'"
+                    [name]="'maxPassengers'"></app-field-select>
+  <app-field-select [parentFormGroup]="searchForm"
+                    [placeholder]="'Spaceship class'"
+                    [options]="classOptions"
+                    [idKey]="'id'"
+                    [name]="'class'"></app-field-select>
+
+  <app-field-input [parentFormGroup]="searchForm"
+                   [type]="'number'"
+                   [min]="1"
+                   [placeholder]="'Min price'"
+                   [name]="'minPrice'"></app-field-input>
+
+  <app-field-input [parentFormGroup]="searchForm"
+                   [type]="'number'"
+                   [min]="1"
+                   [placeholder]="'Max price'"
+                   [name]="'maxPrice'"></app-field-input>
+
+  <button class="btn btn-success search__button"
+          type="submit">Search</button>
+</form>

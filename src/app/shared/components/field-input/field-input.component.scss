@@ -1,0 +1,12 @@
+:host {
+  width: 100%;
+}
+.field-input__input {
+  border: solid #000;
+  border-width: 0 0 1px 0;
+  padding: 5px 10px;
+  width: 100%;
+  &::placeholder {
+    color: #aaa;
+  }
+}
