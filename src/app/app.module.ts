@@ -22,6 +22,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 import { SpaceshipListItemComponent } from './spaceship-list/spaceship-list-item/spaceship-list-item.component';
 import { SpaceshipListFiltersComponent } from './spaceship-list/spaceship-list-filters/spaceship-list-filters.component';
+import { SpaceshipDetailsGalleryComponent } from './spaceship-details/spaceship-details-gallery/spaceship-details-gallery.component';
+import { SpaceshipDetailsPackagesComponent } from './spaceship-details/spaceship-details-packages/spaceship-details-packages.component';
+import { FieldCheckboxComponent } from './shared/components/field-checkbox/field-checkbox.component';
 
 // for bigger application it will be good to create
 // new module for spaceship
@@ -40,6 +43,9 @@ import { SpaceshipListFiltersComponent } from './spaceship-list/spaceship-list-f
     FieldDateComponent,
     SpaceshipListItemComponent,
     SpaceshipListFiltersComponent,
+    SpaceshipDetailsGalleryComponent,
+    SpaceshipDetailsPackagesComponent,
+    FieldCheckboxComponent,
   ],
   imports: [
     BrowserModule,

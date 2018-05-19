@@ -1,0 +1,6 @@
+<div class="field-checkbox" [ngClass]="{'checked': isChecked}">
+  <input type="checkbox" [value]="value"
+         class="field-checkbox__input"
+         (change)="onCheckboxChange()" />
+  <div class="field-checkbox__label">{{value.name}}</div>
+</div>

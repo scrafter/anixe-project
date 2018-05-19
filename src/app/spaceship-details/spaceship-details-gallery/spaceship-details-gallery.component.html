@@ -1,0 +1,16 @@
+<div class="spaceship-details-gallery">
+  <h1 class="spaceship-details-gallery__title">Spaceship photos</h1>
+  <div *ngIf="photos.length; else noResults" class="spaceship-details-gallery__grid">
+
+    <div class="spaceship-details-gallery_photo-wrapper"
+         *ngFor="let photo of photos">
+      <div class="spaceship-details-gallery_photo"
+           [style.backgroundImage]="prepareUrl(photo)"></div>
+    </div>
+
+  </div>
+
+  <ng-template #noResults>
+    <p>No results :(</p>
+  </ng-template>
+</div>

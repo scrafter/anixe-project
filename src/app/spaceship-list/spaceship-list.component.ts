@@ -15,6 +15,9 @@ export class SpaceshipListComponent implements OnInit {
       description: 'Lorem ipsum',
       avatarUrl: 'https://i.ytimg.com/vi/wbSwFU6tY1c/maxresdefault.jpg',
       pricePerDay: 20000,
+      gallery: [],
+      color: 'black',
+      height: 100,
     },
     {
       name: 'Spaceship 2',
@@ -22,6 +25,9 @@ export class SpaceshipListComponent implements OnInit {
       description: 'Lorem ipsum',
       avatarUrl: 'https://i.ytimg.com/vi/wbSwFU6tY1c/maxresdefault.jpg',
       pricePerDay: 10000,
+      gallery: [],
+      color: 'black',
+      height: 100,
     },
     {
       name: 'Spaceship 3',
@@ -29,6 +35,9 @@ export class SpaceshipListComponent implements OnInit {
       description: 'Lorem ipsum',
       avatarUrl: 'https://i.ytimg.com/vi/wbSwFU6tY1c/maxresdefault.jpg',
       pricePerDay: 200000,
+      gallery: [],
+      color: 'black',
+      height: 100,
     },
     {
       name: 'Spaceship 4',
@@ -36,6 +45,9 @@ export class SpaceshipListComponent implements OnInit {
       description: 'Lorem ipsum',
       avatarUrl: 'https://i.ytimg.com/vi/wbSwFU6tY1c/maxresdefault.jpg',
       pricePerDay: 50000,
+      gallery: [],
+      color: 'black',
+      height: 100,
     },
   ];
 

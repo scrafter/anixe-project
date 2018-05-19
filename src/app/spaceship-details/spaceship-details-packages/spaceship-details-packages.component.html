@@ -1,0 +1,10 @@
+<div class="spaceship-details-packages">
+  <h1 class="spaceship-details-packages__title">
+    Extra packages<span class="bracket">(click to choose)</span>
+  </h1>
+  <div class="spaceship-details-packages__item" *ngFor="let package of packagesOptions">
+    <app-field-checkbox (onChange)="onChange($event)"
+                        [idKey]="'id'"
+                        [value]="package"></app-field-checkbox>
+  </div>
+</div>

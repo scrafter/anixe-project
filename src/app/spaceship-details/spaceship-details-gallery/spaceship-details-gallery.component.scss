@@ -1,0 +1,31 @@
+@import "../../../assets/styles/variables";
+
+:host {
+  display: block;
+  width: 100%;
+  background-color: #dfe6e9;
+  padding: 20px 30px;
+}
+.spaceship-list__title {
+  margin-bottom: 20px;
+}
+.spaceship-details-gallery__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.spaceship-details-gallery_photo-wrapper {
+  padding: 5px;
+  width: 25%;
+  @media (max-width: $screen-s-max) {
+    width: 50%;
+  }
+  @media (max-width: $screen-s) {
+    width: 100%;
+  }
+}
+.spaceship-details-gallery_photo {
+  height: 200px;
+  background: no-repeat center;
+  background-size: cover;
+  width: 100%;
+}

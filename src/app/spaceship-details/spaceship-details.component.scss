@@ -1,0 +1,27 @@
+@import "../../assets/styles/variables";
+
+:host {
+  display: block;
+  width: 100%;
+}
+.spaceship-details {
+  padding: 50px 100px;
+  @media (max-width: $screen-s-max) {
+    padding: 50px 25px;
+  }
+}
+.spaceship-details__packages-summary {
+  border-top: 2px solid black;
+  text-align: right;
+  padding-top: 10px;
+  padding-top: 10px;
+}
+.btn {
+  margin-bottom: 15px;
+}
+app-spaceship-list-item /deep/ {
+  background-color: #dfe6e9;
+}
+app-spaceship-details-gallery {
+  margin-bottom: 25px;
+}

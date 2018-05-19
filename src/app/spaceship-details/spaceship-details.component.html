@@ -1,3 +1,12 @@
-<p>
-  spaceship-details works!
-</p>
+<div class="spaceship-details">
+  <button class="btn btn-info" [routerLink]="['/spaceship-list']">< Back to list</button>
+  <!--in real life solution separated view will be created -->
+  <!--it's just time saving solution-->
+  <app-spaceship-list-item [item]="spaceship"></app-spaceship-list-item>
+  <app-spaceship-details-gallery [photos]="spaceship.gallery"></app-spaceship-details-gallery>
+  <app-spaceship-details-packages (onUpdate)="onPackagesChange($event)"></app-spaceship-details-packages>
+
+  <div class="spaceship-details__packages-summary">
+    <h2>In total: ${{spaceship.pricePerDay + packagesSum}}</h2>
+  </div>
+</div>
